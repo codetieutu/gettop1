@@ -6,6 +6,7 @@ const url = 'https://www.z2u.com/product-31279/Account-Adobe-Individuals-Creativ
 const TOKEN = '7941486664:AAGhSJea3p7xYQ1fDIRAOeZ4X6_Uqc7j4W4';
 
 let top1 = '';
+let pricel = '';
 
 async function sendMessage(message, id) {
     try {
@@ -34,8 +35,10 @@ async function gettop1() {
         const username = $('.sellerName .userNameMaxText').first().text().trim();
 
         const price = $('.zu-flex.priceBar .price').text().trim();
-        if (top1 !== username) {
+        if (top1 !== username && price !== pricel) {
             sendMessage(`New top 1: ${username}, price: ${price}`, "484507121");
+            console.log(`New top 1: ${username}, price: ${price}`);
+            pricel = price;
             top1 = username;
         }
 
