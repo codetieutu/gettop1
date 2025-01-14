@@ -45,4 +45,5 @@ async function gettop1() {
 }
 
 
-setInterval(gettop1, 10000); 
+setInterval(gettop1, 10000);
+console.log("running...");

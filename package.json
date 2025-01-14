@@ -6,9 +6,9 @@
   "name": "gettop1adobe14",
   "version": "1.0.0",
   "main": "gettop1.js",
-  "start": "node gettop1.js",
   "devDependencies": {},
   "scripts": {
+    "start": "node gettop1.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "codetieutu",
