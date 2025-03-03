@@ -1,6 +1,7 @@
 const axios = require('axios');
+require("dotenv").config();
 
-const TOKEN = '7941486664:AAGhSJea3p7xYQ1fDIRAOeZ4X6_Uqc7j4W4';
+const TOKEN = process.env.TOKEN;
 
 async function sendMessage(message, id) {
     try {
@@ -14,4 +15,4 @@ async function sendMessage(message, id) {
     }
 }
 
-sendMessage("hai không rep con bot đi hồi nó không gửi lại hỏi", "484507121");
+module.exports = { sendMessage }
