@@ -1,0 +1,7 @@
+- Kill current proccess
+- Download source code
+- Extract 
+- Open cmd in folder source (have file gettop1.js)
+- Enter: npm install
+- Enter: npm start
+- If line running... appears it is successful
