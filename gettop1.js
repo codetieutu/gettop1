@@ -25,9 +25,9 @@ async function getTop1(url, mess, currentTop, currentPrice) {
         const price = $('.priceBar .price').first().text().trim(); // Adjust selector if needed
 
         if (currentTop !== username) {
-            sendMessage(`New top 1 ${mess}: ${username}, price: ${price}`, "484507121");
-            sendMessage(`New top 1 ${mess}: ${username}, price: ${price}`, "4609931085");
-            console.log(`New top 1 ${mess}: ${username}, price: ${price}`);
+            // sendMessage(`New top 1 ${mess}: ${username}, price: ${price}`, "484507121");
+            sendMessage(`New top 1 ${mess}: ${username}, price: ${price}`, "-1002517867301");
+            // console.log(`New top 1 ${mess}: ${username}, price: ${price}`);
             return { top: username, price: price };
         }
 
